@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/keepkind
+    username: keepkind
+    password: keepkind
+  sql:
+    init:
+      mode: never
+server:
+  port: 8080
+
+keepkind:
+  ollama:
+    baseUrl: http://localhost:11434
+    chatModel: llama3.2:3b
+    embedModel: nomic-embed-text
